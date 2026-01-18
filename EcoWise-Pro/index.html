@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>EcoWise Pro++ | AI Waste Intelligence</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts: Inter (Clean) & Orbitron (Tech) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons (Modern, Clean) -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="background-glow"></div>
+    <div class="scanlines"></div>
+
+    <div class="main-wrapper">
+
+        <!-- Sidebar / Status Panel -->
+        <aside class="status-panel">
+            <div class="logo-area">
+                <i class="ph-fill ph-plant-bold"></i>
+                <span>EcoWise<br><small>Pro++</small></span>
+            </div>
+
+            <div class="system-status">
+                <div class="status-item">
+                    <span class="label">SYSTEM</span>
+                    <span class="value online">ONLINE</span>
+                </div>
+                <div class="status-item">
+                    <span class="label">VERSION</span>
+                    <span class="value">v2.4.0</span>
+                </div>
+                <div class="status-item">
+                    <span class="label">AI ENGINE</span>
+                    <span class="value">ACTIVE</span>
+                </div>
+            </div>
+
+            <div class="decorative-chart">
+                <!-- CSS-only simple bar chart visual -->
+                <div class="bar" style="height: 40%"></div>
+                <div class="bar" style="height: 70%"></div>
+                <div class="bar" style="height: 50%"></div>
+                <div class="bar" style="height: 90%"></div>
+                <div class="bar" style="height: 60%"></div>
+            </div>
+        </aside>
+
+        <!-- Main Interface -->
+        <main class="glass-terminal">
+
+            <header>
+                <h1>Sustainability Intelligence Link</h1>
+                <p class="subtitle">Advanced Material Identification & Disposal Logic</p>
+            </header>
+
+            <div id="chatBox" class="chat-interface">
+                <div class="bot-message intro">
+                    <i class="ph ph-robot"></i>
+                    <div class="message-content">
+                        System initialized. Awaiting waste object input for analysis.
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <i class="ph ph-magnifying-glass"></i>
+                    <input id="userInput" type="text"
+                        placeholder="Identify object (e.g., 'cracked screen', 'nylon bag')..." autocomplete="off" />
+                </div>
+                <div class="action-buttons">
+                    <button class="btn primary" onclick="analyzeWaste()">
+                        <i class="ph-bold ph-scan"></i> Analyze
+                    </button>
+                    <button class="btn secondary" onclick="showExplanation()">
+                        <i class="ph-bold ph-brain"></i> Logic
+                    </button>
+                </div>
+            </div>
+
+            <div id="impactPanel" class="impact-ticker">
+                <i class="ph-duotone ph-globe-hemisphere-west"></i>
+                <span>Waiting for environmental impact data...</span>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="analytics.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
