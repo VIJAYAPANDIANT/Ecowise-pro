@@ -64,6 +64,7 @@ body {
   width: 200px;
   background: var(--bg-panel);
   border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
   border-radius: 16px;
   padding: 24px;
@@ -149,6 +150,7 @@ body {
   flex: 1;
   background: rgba(30, 41, 59, 0.6);
   border: 1px solid var(--glass-border);
+  -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
   border-radius: 16px;
   padding: 30px;
