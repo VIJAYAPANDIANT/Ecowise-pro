@@ -137,13 +137,20 @@ body {
   animation: barPulse 3s infinite ease-in-out alternate;
 }
 
-.decorative-chart .bar:nth-child(even) {
+.decorative-chart .bar:nth-child(2),
+.decorative-chart .bar:nth-child(4) {
   animation-delay: 1s;
 }
 
 .decorative-chart .bar:nth-child(3) {
   animation-delay: 0.5s;
 }
+
+.decorative-chart .bar:nth-child(1) { height: 40%; }
+.decorative-chart .bar:nth-child(2) { height: 70%; }
+.decorative-chart .bar:nth-child(3) { height: 50%; }
+.decorative-chart .bar:nth-child(4) { height: 90%; }
+.decorative-chart .bar:nth-child(5) { height: 60%; }
 
 /* Main Terminal */
 .glass-terminal {
