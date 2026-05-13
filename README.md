@@ -1,6 +1,8 @@
 <div align="center">
   <h1>🌿 EcoWise Pro++ 🌍</h1>
   <h3>Explainable AI Sustainability Intelligence System</h3>
+  <br />
+  <a href="https://ecowise-pro.vercel.app"><strong>🌍 View Live Demo</strong></a>
 </div>
 
 <br />
